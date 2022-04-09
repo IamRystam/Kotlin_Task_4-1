@@ -10,8 +10,8 @@ class WallServiceTest {
     @Test
     fun addIdNotNull() {
         val service = WallService()
-        val id1: Long = 100
-        val
+        val id1: Long = 1
+
         val post = Post(
             id = 0,
             ownerId = 12366,
@@ -22,7 +22,6 @@ class WallServiceTest {
             replyOwnerId = 1234,
             replyPostId = 89056,
             friendsOnly = 1,
-            copyright = "890",
             postType = "5443",
             signerId = "23457",
             canPin = true,
@@ -45,7 +44,7 @@ class WallServiceTest {
     fun updateTrue() {
 
         val service = WallService()
-val placeholder1:Placeholder
+
         service.add(
             Post(
                 id = 0,
@@ -57,7 +56,6 @@ val placeholder1:Placeholder
                 replyOwnerId = 1234,
                 replyPostId = 89056,
                 friendsOnly = 1,
-                copyright = "890",
                 postType = "5443",
                 signerId = "23457",
                 canPin = true,
@@ -68,14 +66,14 @@ val placeholder1:Placeholder
                 isFavorite = true,
                 postponedId = 343,
                 comments = Comments(count = 12, canPost = true, groupsCanPosts = true, canClose = true, canOpen = true),
-               reposts =  Reposts(count = 34, userReposted = true),
-               likes =  Likes(count = 56, userLikes = true, canLike = true, canPublish = true),
-                               donut =  Donut(isDonut = true, placeholder = placeholder1  ,)
+                reposts = Reposts(count = 34, userReposted = true),
+                likes = Likes(count = 56, userLikes = true, canLike = true, canPublish = true)
+
             )
         )
 
         val update = Post(
-            id = 100,
+            id = 1,
             ownerId = 12366,
             fromId = 3456,
             createdBy = 565656,
@@ -84,7 +82,6 @@ val placeholder1:Placeholder
             replyOwnerId = 1234,
             replyPostId = 89056,
             friendsOnly = 1,
-            copyright = "890",
             postType = "5443",
             signerId = "23457",
             canPin = true,
@@ -120,7 +117,6 @@ val placeholder1:Placeholder
                 replyOwnerId = 1234,
                 replyPostId = 89056,
                 friendsOnly = 1,
-                copyright = "890",
                 postType = "5443",
                 signerId = "23457",
                 canPin = true,
@@ -146,7 +142,6 @@ val placeholder1:Placeholder
             replyOwnerId = 1234,
             replyPostId = 89056,
             friendsOnly = 1,
-            copyright = "890",
             postType = "5443",
             signerId = "23457",
             canPin = true,

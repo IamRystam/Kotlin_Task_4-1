@@ -21,12 +21,10 @@ data class Post(
     val comments: Comments,
     val reposts: Reposts,
     val likes: Likes,
-    val copyright: Copyright,
-    val views: Views,
-    //val copyHistory:Array<Int>,
-    val donut: Donut,
-    val geo: Geo,
-    val postSource: PostSource
+    //val views: Views,
+    //val donut: Donut,
+    //val geo: Geo,
+    //val postSource: PostSource
 ) {
 
 
