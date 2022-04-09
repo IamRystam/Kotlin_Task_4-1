@@ -1,6 +1,6 @@
 fun main() {
 
-    val post = Post(
+   /* val post = Post(
         id = 0,
         ownerId = 12366,
         fromId = 3456,
@@ -25,7 +25,7 @@ fun main() {
         Likes(count = 56, userLikes = true, canLike = true, canPublish = true)
     )
     val post1 = Post(
-        id = 200,
+        id = 100,
         ownerId = 12366,
         fromId = 3456,
         createdBy = 565656,
@@ -52,7 +52,7 @@ fun main() {
 
     wallService.add(post)
     println(wallService.add(post))
-    println(wallService.update(post1))
+    println(wallService.update(post1))*/
 
 
 }

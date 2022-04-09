@@ -33,7 +33,7 @@ class WallService {
                     isFavorite = post.isFavorite,
                     postponedId = post.postponedId,
 
-                    Comments(
+                    comments = Comments(
                         count = post.comments.count,
                         canPost = post.comments.canPost,
                         groupsCanPosts = post.comments.groupsCanPosts,
@@ -41,16 +41,32 @@ class WallService {
                         canOpen = post.comments.canOpen
                     ),
 
-                    Reposts(
+                    reposts = Reposts(
                         count = post.reposts.count,
                         userReposted = post.reposts.userReposted
                     ),
-                    Likes(
+                    likes = Likes(
                         count = post.likes.count,
                         userLikes = post.likes.userLikes,
                         canLike = post.likes.canLike,
                         canPublish = post.likes.canPublish
+                    ),
+                    donut = Donut(
+                        isDonut = post.donut.isDonut,
+                        paidDuration = post.donut.paidDuration,
+                        placeholder = post.donut.placeholder,
+                        canPublishFreeCopy = post.donut.canPublishFreeCopy,
+                        editMode = post.donut.editMode
+                                            ),
+                    views = Views(
+                        count = post.views.count
+                                            ),
+                    geo = Geo(
+                        type = post.geo.type,
+                        coordinates = post.geo.coordinates,
+                        place = post.geo.place
                     )
+
                 )
                 x = true
 

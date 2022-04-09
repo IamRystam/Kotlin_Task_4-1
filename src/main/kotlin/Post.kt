@@ -9,7 +9,6 @@ data class Post(
     val replyOwnerId: Int,
     val replyPostId: Int,
     val friendsOnly: Int = 1,
-    val copyright: String,
     val postType: String,
     val signerId: String,
     val canPin: Boolean,
@@ -21,7 +20,13 @@ data class Post(
     val postponedId: Int,
     val comments: Comments,
     val reposts: Reposts,
-    val likes: Likes
+    val likes: Likes,
+    val copyright: Copyright,
+    val views: Views,
+    //val copyHistory:Array<Int>,
+    val donut: Donut,
+    val geo: Geo,
+    val postSource: PostSource
 ) {
 
 

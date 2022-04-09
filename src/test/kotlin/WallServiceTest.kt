@@ -3,12 +3,15 @@ import org.junit.Test
 
 class WallServiceTest {
 
+
     private var posts = emptyArray<Post>()
+
 
     @Test
     fun addIdNotNull() {
         val service = WallService()
         val id1: Long = 100
+        val
         val post = Post(
             id = 0,
             ownerId = 12366,
@@ -42,7 +45,7 @@ class WallServiceTest {
     fun updateTrue() {
 
         val service = WallService()
-
+val placeholder1:Placeholder
         service.add(
             Post(
                 id = 0,
@@ -64,9 +67,10 @@ class WallServiceTest {
                 markedAsAds = true,
                 isFavorite = true,
                 postponedId = 343,
-                Comments(count = 12, canPost = true, groupsCanPosts = true, canClose = true, canOpen = true),
-                Reposts(count = 34, userReposted = true),
-                Likes(count = 56, userLikes = true, canLike = true, canPublish = true)
+                comments = Comments(count = 12, canPost = true, groupsCanPosts = true, canClose = true, canOpen = true),
+               reposts =  Reposts(count = 34, userReposted = true),
+               likes =  Likes(count = 56, userLikes = true, canLike = true, canPublish = true),
+                               donut =  Donut(isDonut = true, placeholder = placeholder1  ,)
             )
         )
 
