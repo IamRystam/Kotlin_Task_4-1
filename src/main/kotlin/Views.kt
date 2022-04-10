@@ -1,3 +1,3 @@
-class Views (
-    val count:Int
-        )
+class Views(
+    val count: Int
+)

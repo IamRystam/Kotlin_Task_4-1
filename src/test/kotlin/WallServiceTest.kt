@@ -33,7 +33,12 @@ class WallServiceTest {
             postponedId = 343,
             Comments(count = 12, canPost = true, groupsCanPosts = true, canClose = true, canOpen = true),
             Reposts(count = 34, userReposted = true),
-            Likes(count = 56, userLikes = true, canLike = true, canPublish = true)
+            Likes(count = 56, userLikes = true, canLike = true, canPublish = true),
+            views = Views(count = 121),
+            geo = Geo(type = "121", coordinates = "", place = Place("")),
+            copyHistory = null,
+            attachments = (AudioAttachment(type = "audio", audio = AudioAttachment.Audio(12, 12, 12, 12)))
+
         )
         val result = service.add(post)
 
@@ -67,7 +72,11 @@ class WallServiceTest {
                 postponedId = 343,
                 comments = Comments(count = 12, canPost = true, groupsCanPosts = true, canClose = true, canOpen = true),
                 reposts = Reposts(count = 34, userReposted = true),
-                likes = Likes(count = 56, userLikes = true, canLike = true, canPublish = true)
+                likes = Likes(count = 56, userLikes = true, canLike = true, canPublish = true),
+                views = Views(count = 121),
+                geo = Geo(type = "121", coordinates = "", place = Place("")),
+                copyHistory = null,
+                attachments = (AudioAttachment(type = "audio", audio = AudioAttachment.Audio(12, 12, 12, 12)))
 
             )
         )
@@ -93,7 +102,11 @@ class WallServiceTest {
             postponedId = 343,
             Comments(count = 12, canPost = true, groupsCanPosts = true, canClose = true, canOpen = true),
             Reposts(count = 34, userReposted = true),
-            Likes(count = 56, userLikes = true, canLike = true, canPublish = true)
+            Likes(count = 56, userLikes = true, canLike = true, canPublish = true),
+            views = Views(count = 121),
+            geo = Geo(type = "121", coordinates = "", place = Place("")),
+            copyHistory = null,
+            attachments = (AudioAttachment(type = "audio", audio = AudioAttachment.Audio(12, 12, 12, 12)))
         )
 
         val result = service.update(update)
@@ -128,7 +141,11 @@ class WallServiceTest {
                 postponedId = 343,
                 Comments(count = 12, canPost = true, groupsCanPosts = true, canClose = true, canOpen = true),
                 Reposts(count = 34, userReposted = true),
-                Likes(count = 56, userLikes = true, canLike = true, canPublish = true)
+                Likes(count = 56, userLikes = true, canLike = true, canPublish = true),
+                views = Views(count = 121),
+                geo = Geo(type = "121", coordinates = "", place = Place("")),
+                copyHistory = null,
+                attachments = (AudioAttachment(type = "audio", audio = AudioAttachment.Audio(12, 12, 12, 12)))
             )
         )
 
@@ -153,7 +170,11 @@ class WallServiceTest {
             postponedId = 343,
             Comments(count = 12, canPost = true, groupsCanPosts = true, canClose = true, canOpen = true),
             Reposts(count = 34, userReposted = true),
-            Likes(count = 56, userLikes = true, canLike = true, canPublish = true)
+            Likes(count = 56, userLikes = true, canLike = true, canPublish = true),
+            views = Views(count = 121),
+            geo = Geo(type = "121", coordinates = "", place = Place("")),
+            copyHistory = null,
+            attachments = (AudioAttachment(type = "audio", audio = AudioAttachment.Audio(12, 12, 12, 12)))
         )
 
         val result = service.update(update)

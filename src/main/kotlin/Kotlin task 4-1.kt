@@ -1,6 +1,6 @@
 fun main() {
-
-    val post = Post(
+}
+    /*val post = Post(
         id = 0,
         ownerId = 12366,
         fromId = 3456,
@@ -53,4 +53,4 @@ fun main() {
     println(wallService.update(post1))
 
 
-}
+}*/

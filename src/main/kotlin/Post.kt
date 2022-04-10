@@ -21,10 +21,10 @@ data class Post(
     val comments: Comments,
     val reposts: Reposts,
     val likes: Likes,
-    //val views: Views,
-    //val donut: Donut,
-    //val geo: Geo,
-    //val postSource: PostSource
+    val views: Views,
+    val geo: Geo,
+    val copyHistory: Array<Reposts>?,
+    val attachments: AudioAttachment
 ) {
 
 
