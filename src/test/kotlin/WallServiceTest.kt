@@ -3,11 +3,6 @@ import org.junit.Test
 
 class WallServiceTest {
 
-
-    //private var posts = emptyArray<Post>()
-    //private var commentsArray = emptyArray<Comments>()
-
-
     @Test
     fun addIdNotNull() {
         val service = WallService()
